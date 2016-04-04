@@ -1,22 +1,3 @@
-[root@fuji cmktools]# rm manifiest.json
-rm: remove regular file ‘manifiest.json’? y
-[root@fuji cmktools]# ls -l
-total 32
--rw-rw-r--. 1 cconklin cconklin 2847 Apr  4 11:57 cli.py
--rw-r--r--. 1 root     root      103 Apr  3 11:52 config.json
--rw-r--r--. 1 root     root     6014 Apr  4 12:15 cromaca_toolkit.py
--rw-r--r--. 1 root     root     6659 Apr  4 12:32 cromaca_toolkit.pyc
--rwxrwxr-x. 1 root     root      130 Apr  3 11:30 search.py
--rw-r--r--. 1 root     root      442 Apr  4 12:32 search.pyc
-[root@fuji cmktools]# cat config.json
-{"manifest":"manifest.dat","items_total":"540","subdirs":["img","vid","gif"],"last_access":"03-31-16"}
-[root@fuji cmktools]# clear
-
-▽
-
-▽
-# Byte-compiled / optimized / DLL files
-__pycache__/
 *.py[cod]
 *$py.class
 
@@ -49,6 +30,9 @@ var/
 
 # json for now
 *.json
+
+# content folders
+content/
 
 # Installer logs
 pip-log.txt
