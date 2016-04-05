@@ -3,7 +3,7 @@ import os
 import sys
 import hashlib
 import datetime
-import search
+# import search
 
 __version__ = '0.1'
 __config_file__  = 'config.json'
@@ -78,7 +78,7 @@ def save_manifest(modified_manifest, manifest_path="."):
    json.dump(modified_manifest, manifest_path + '/' + __manifest_file_name__)
 
 ###############################################################################################
-def build_search_paths(home_path, subfolders):
+def build_search_paths(home_path=__content_home__, subfolders):
    ''' Returns a list of fully qualified paths to all directories that may contain
        content based on a passed common "home_path" and a "subfolders" list object. '''
    paths = []
