@@ -11,14 +11,16 @@ __manifest_file_name__ = 'manifiest.json'
 __content_home__ =os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'content'))
 __description__ = ''' This is the photonz api interface for working with a stucture indicated
                       in the config.json file '''
+__mainfest_home__ = os.path.abspath(os.curdir)
 
 ###############################################################################################
 def get_version():
    ''' Return application version '''
    return __version__
 
+###############################################################################################
 def get_manifest_file_path():
-   pass
+   return __manifest_home__
 
 ###############################################################################################
 def get_config_file_name():

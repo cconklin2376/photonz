@@ -14,8 +14,9 @@ def status():
 def info():
    print("Version: " + ptk.get_version())
    print("Content Home: " + ptk.get_content_home())
-   print("Manifest file: " + ptk.__manifest_file_name__)
+   print("Manifest file: " + ptk.get_manifest_file_path())
    print("Install date: " + str(datetime.datetime.now())) 
+   print
 
 def main():
    arg = sys.argv[1]
