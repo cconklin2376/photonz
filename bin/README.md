@@ -18,3 +18,34 @@
 - build display functionality
 - version control
 - add the content_root_path to the config file
+
+
+
+## Use:
+$ python photonz.py info
+
+Version: Photonz 1.0
+Content Home: /vmstore/photonz/photonz_complete_backup_2016
+Manifest file: /vmstore/photonz/photonz_complete_backup_2016/app/manifest.json
+Install date: 18-Mar-2016
+
+Content:
+	img:	818
+	vid:	134
+	gif:	32
+
+$ python photonz.py status
+
+photonz status:
+
+The following items have not been added to the manifest:
+	snark.jpg
+	DCS5489_08122006.jpg
+
+$ python photonz.py add
+
+Added /vmstore/photonz/photonz_backup_2016/content/img/snark.jpg to manifest.
+Added /vmstore/photonz/photonz_backup_2016/content/img/DCS5489_08122006.jpg to manifest.
+
+
+
