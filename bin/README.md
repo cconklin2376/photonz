@@ -18,7 +18,8 @@
 - build display functionality
 - version control
 - add the content_root_path to the config file
-
+- format the install date in photonz
+- create accessor for manifest file name in toolkit for use in photonz.py info() 
 
 
 ## Use:

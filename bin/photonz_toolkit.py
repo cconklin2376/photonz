@@ -17,6 +17,9 @@ def get_version():
    ''' Return application version '''
    return __version__
 
+def get_manifest_file_path():
+   pass
+
 ###############################################################################################
 def get_config_file_name():
    ''' Return the filename of the config file that is being used '''
@@ -78,7 +81,7 @@ def save_manifest(modified_manifest, manifest_path="."):
    json.dump(modified_manifest, manifest_path + '/' + __manifest_file_name__)
 
 ###############################################################################################
-def build_search_paths(home_path=__content_home__, subfolders):
+def build_search_paths(subfolders, home_path=__content_home__):
    ''' Returns a list of fully qualified paths to all directories that may contain
        content based on a passed common "home_path" and a "subfolders" list object. '''
    paths = []
